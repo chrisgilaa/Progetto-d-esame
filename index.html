@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio di Chris</title>
+    <!-- Inclusione di Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Inclusione del tuo CSS personalizzato qui -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        /* Aggiungi stile CSS personalizzato qui */
+        .navbar {
+            display: grid; /* Nasconde la navbar per default */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container1">
+            <a class="navbar-brand" href="#">
+                <img src="Z:\PORTFOLIO CV\Firefly_20240226112943-removebg-preview.png" style="width: 80px; height: 80px; opacity: 50%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Banner/Home Section -->
+
+  
+<section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Chris</h2>
+                <h3 class="hero_desc">Sono un diplomando in Informatica e Telecomunicazioni</h3>
+            </div>
+</section>
+
+
+    <!-- Slider Section -->
+<!-- Main Banner/Home Section -->
+
+
+<section class="pippo" id="bora">
+    <div class="container">
+        <h4>My Project</h4>
+        <div class="row"> <!-- Aggiungi una riga per i tuoi elementi -->
+
+            <!-- Elemento 1 -->
+            <div class="col-md-4"> <!-- Cambia il numero in base a quante colonne vuoi per riga -->
+                <img src="Z:\PORTFOLIO CV\LOGO.PNG" alt="Placeholder Image 1" style="width:100%">
+                <div class="middle">
+                    <button onclick="window.location.href='https://www.keysforthefuture.store'" class="text">Keys For The Future</button>
+                </div>
+            </div>
+
+            <!-- Elemento 2 (replica del primo, adattalo secondo necessità) -->
+            <div class="col-md-4">
+                <img src="Z:\PORTFOLIO CV\logotouchè.png" alt="Placeholder Image 2" style="width:80%">
+                <div class="middle">
+                    <button onclick="window.location.href='https://toucheforbusines.wixsite.com/live'" class="text">Touchè <br>Company</button>
+                </div>
+            </div>
+
+            <!-- Elemento 3 (replica del primo, adattalo secondo necessità) -->
+            <div class="col-md-4">
+                <img src="Z:\PORTFOLIO CV\campagna pubblicitaria.jfif" alt="Placeholder Image 3" style="width:80%">
+                <div class="middle">
+                    <button onclick="window.location.href='Z:\PORTFOLIO CV\Campagne pubblicitarie.html'" class="text" >Campagne Pubblicitarie</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+ <!-- About Section -->
+ <section id="about" style="background: #0a0a0a;">
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center">About Me</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img src="images/about.jpeg" class="imageAboutPage" alt="">
+            </div>
+            <div class="col-lg-8">
+                <p>PROVA PROVA PROVA PROVA</p>
+                <!-- Ulteriori dettagli -->
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Services Section -->
+    <!-- Assicurati di includere i tuoi servizi qui -->
+
+    <!-- Altre sezioni come Portfolio e Contact possono seguire un modello simile a quanto sopra -->
+
+    <!-- Inclusione di Bootstrap JS e dipendenze alla fine del body per un caricamento più veloce delle pagine -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Inclusione di Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Attiva la navbar quando si clicca sul logo
+        document.querySelector('.navbar-brand').addEventListener('click', function() {
+            document.querySelector('.navbar').style.display = 'block';
+        });
+
+        // Inizializza Swiper per lo slider
+        var swiper = new Swiper('.swiper', {
+            // Opzioni dello slider
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        
+    </script>
+</body>
+</html>
